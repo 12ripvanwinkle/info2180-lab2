@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+header {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    padding: 20px;
+}
+header h1
+{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#myself {
+    margin-top: 15px;
+    border-radius: 50%; /* Circular image */
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Keeps image ratio */
+}
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main content (3 parts), Sidebar (1 part) */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: auto;
+}
+
+.float-left {
+    float: left; /* Float the image to the left */
+    margin: 0 15px 15px 0; /* Margin for spacing */
+    width: 40%; /* Adjust as necessary */
+}
+
+.float-right {
+    float: right; /* Float the image to the right */
+    margin: 0 0 15px 15px; /* Margin for spacing */
+    width: 40%; /* Adjust as necessary */
+}
+
+/* Clearfix to contain floated elements */
+.blog-post::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.blog-post h2#title1, h2#title2
+{
+    font-size: 32px;
+    color: #48BB78;
+}
+.blog-post p#date1, p#date2
+{
+    color: #718096;
+    padding-bottom: 10px;
+}
+.secondary h3#socialHeader, h3#archivesHeader
+{
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman',Times, serif;
+    position: relative;
+    left: 10px;
+}
+.secondary h3#aboutHeader
+{
+    color: #000000;
+    font-family: Georgia, 'Times New Roman',Times, serif;
+    margin: 20px 0;
+    position: relative;
+    left: 0px;
+}
+.about 
+{
+    background-color: #E2E8F0; /* Background color for the section */
+    padding: 20px; /* Optional padding for the section */
+}
+.secondary a
+{
+    color: #4299E1;
+    text-decoration: none;
+}
+.secondary ul 
+{
+    list-style-type: none; /* Remove bullet points */
+}
+.secondary ul li {
+    margin-bottom: 10px; /* Space between each list item */
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+.secondary h3#socialHeader
+{   
+    position: relative;
+    top: 20px;
+}
+.secondary h3#archivesHeader
+{   
+    position: relative;
+    top: 25px;
+}
+footer
+{
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
